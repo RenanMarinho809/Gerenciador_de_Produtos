@@ -1,6 +1,10 @@
 const express = require('express');
+const router = require('./routes/produtoRoutes');
 
 const app = express();
+app.use(express.json());
+
+app.use(router);
 
 const porta = 3000;
 
