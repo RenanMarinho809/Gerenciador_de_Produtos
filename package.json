@@ -1,0 +1,25 @@
+{
+  "name": "gerenciador_de_produtos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenanMarinho809/Gerenciador_de_Produtos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RenanMarinho809/Gerenciador_de_Produtos/issues"
+  },
+  "homepage": "https://github.com/RenanMarinho809/Gerenciador_de_Produtos#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
