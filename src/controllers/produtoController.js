@@ -33,3 +33,15 @@ exports.atualizarProduto = async (req, res) => {
     res.status(400).send(error);
   }
 };
+
+exports.deletarProduto = async (req, res) => {
+    try {
+        const produto = await Produtos.findByIdAndDelete(req.params.id);
+        if (!produto) {
+            return res.status(404).send({ error: 'Produto não encontrado' });
+        }
+        res.status(200).send({ message: 'Produto deletado com sucesso'});
+    } catch (error) {
+        res.status(500).send(error); 
+    }
+}
