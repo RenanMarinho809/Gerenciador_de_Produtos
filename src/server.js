@@ -1,9 +1,10 @@
 const express = require('express');
 const produtoRoutes = require('./routes/produtoRoutes');
 const connectDB = require('./config/database');
+const bodyParser = require('body-parser');
 
 const app = express();
-app.use(express.json());
+app.use(bodyParser.json());
 
 app.use('/produtos', produtoRoutes);
 
