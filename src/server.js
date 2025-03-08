@@ -1,10 +1,13 @@
 const express = require('express');
-const router = require('./routes/produtoRoutes');
+const produtoRoutes = require('./routes/produtoRoutes');
+const connectDB = require('./config/database');
 
 const app = express();
 app.use(express.json());
 
-app.use(router);
+app.use('/produtos', produtoRoutes);
+
+connectDB();
 
 const porta = 3000;
 
